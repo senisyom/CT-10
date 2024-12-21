@@ -1,6 +1,11 @@
 import { GetNews, INews } from "../types";
 import { createSlice } from "@reduxjs/toolkit";
-import { addPost, fetchNews, fetchOneNews } from "./postsThunk.ts";
+import {
+  addPost,
+  fetchNews,
+  fetchOneNews,
+  fetchComments,
+} from "./postsThunk.ts";
 
 interface NewsState {
   news: GetNews[];
@@ -8,6 +13,8 @@ interface NewsState {
   onePostsLoaded: boolean;
   newsLoaded: boolean;
   addLoading: boolean;
+  comments: any[];
+  commentsLoading: boolean;
 }
 
 const initialState: NewsState = {
@@ -16,6 +23,8 @@ const initialState: NewsState = {
   newsLoaded: false,
   onePostsLoaded: false,
   addLoading: false,
+  comments: [],
+  commentsLoading: false,
 };
 
 export const newsSlice = createSlice({
@@ -54,6 +63,16 @@ export const newsSlice = createSlice({
       })
       .addCase(addPost.rejected, (state) => {
         state.addLoading = false;
+      })
+      .addCase(fetchComments.pending, (state) => {
+        state.commentsLoading = true;
+      })
+      .addCase(fetchComments.fulfilled, (state, { payload: items }) => {
+        state.commentsLoading = false;
+        state.comments = items;
+      })
+      .addCase(fetchComments.rejected, (state) => {
+        state.commentsLoading = false;
       });
   },
   selectors: {
@@ -61,6 +80,7 @@ export const newsSlice = createSlice({
     selectOneNews: (state) => state.oneNews,
     selectNewsLoading: (state) => state.newsLoaded,
     selectOnePostsLoading: (state) => state.onePostsLoaded,
+    selectComments: (state) => state.comments,
   },
 });
 
@@ -71,4 +91,5 @@ export const {
   selectNewsLoading,
   selectOnePostsLoading,
   selectOneNews,
+  selectComments,
 } = newsSlice.selectors;
