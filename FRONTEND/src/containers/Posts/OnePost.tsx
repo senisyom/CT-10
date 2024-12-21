@@ -3,7 +3,6 @@ import { fetchComments, fetchOneNews } from "../../store/postsThunk.ts";
 import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 import { selectComments, selectOneNews } from "../../store/postsSlice.ts";
-
 const OnePosts = () => {
   const params = useParams();
   const dispatch = useAppDispatch();
@@ -15,7 +14,6 @@ const OnePosts = () => {
       dispatch(fetchComments(params.id));
     }
   }, [dispatch]);
-
   return (
     <>
       OnePosts
