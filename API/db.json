@@ -1,0 +1,93 @@
+{
+  "news": [
+    {
+      "title": "ddd",
+      "content": "ddd",
+      "image": null,
+      "date": "2024-08-24T09:08:32.849Z",
+      "id": "97e075ae-dc84-4f61-a191-1eb796f090d7"
+    },
+    {
+      "title": "ggg",
+      "content": "ggg",
+      "image": null,
+      "date": "2024-08-24T09:08:40.340Z",
+      "id": "7a291f6c-d40d-405c-9fb4-78be22253a3e"
+    },
+    {
+      "title": "fff",
+      "content": "fff",
+      "image": "images02c044e5-37dc-49d7-97a9-8aa00e126c3b.JPG",
+      "date": "2024-08-24T12:07:12.107Z",
+      "id": "75bb938f-7839-46e7-a73a-5b4c9319ae1a"
+    },
+    {
+      "title": "ggg",
+      "content": "ggg",
+      "image": null,
+      "date": "2024-08-24T13:19:26.851Z",
+      "id": "af491fc0-45eb-496b-b49b-5ae5bed249b0"
+    },
+    {
+      "title": "fff",
+      "content": "fff",
+      "image": "images1c26232f-65d5-48d7-a437-e67f6f2ffd7a.JPG",
+      "date": "2024-08-24T13:22:00.995Z",
+      "id": "85274da6-e8d5-4f0a-8cac-70a859a8bb78"
+    },
+    {
+      "title": "fff",
+      "content": "fff",
+      "image": null,
+      "date": "2024-08-24T13:22:09.811Z",
+      "id": "f41e5109-68f8-4e6d-b33e-e7c3e1417527"
+    },
+    {
+      "title": "FFF",
+      "content": "FFF",
+      "image": "images5f99e285-89c6-4ec0-86a6-d401b3ed23c9.JPG",
+      "date": "2024-08-24T13:23:24.429Z",
+      "id": "fbf376eb-61df-429b-893f-1e1da9440b85"
+    },
+    {
+      "title": "tt",
+      "content": "tt",
+      "image": null,
+      "date": "2024-08-24T13:31:19.357Z",
+      "id": "7a7610cd-065c-4b73-8863-c0c7599648c5"
+    },
+    {
+      "title": "tt",
+      "content": "tt",
+      "image": null,
+      "date": "2024-08-24T13:31:20.568Z",
+      "id": "16499313-b72c-41f9-baf4-5c6d929bdcdd"
+    }
+  ],
+  "comments": [
+    {
+      "author": "Anonymous",
+      "idNews": "97e075ae-dc84-4f61-a191-1eb796f090d7",
+      "content": "Ok",
+      "id": "d93e6f6d-b5e2-402a-b4c8-5ef64d2f7552"
+    },
+    {
+      "author": "Anonymous",
+      "idNews": "7a291f6c-d40d-405c-9fb4-78be22253a3e",
+      "content": "no",
+      "id": "a5a42187-9762-49a6-84cb-3a19f46eff00"
+    },
+    {
+      "author": "Anonymous",
+      "idNews": "7a291f6c-d40d-405c-9fb4-78be22253a3e",
+      "content": "n2o",
+      "id": "854d33bc-c54e-46d3-a89e-35bfeaa6e7d5"
+    },
+    {
+      "author": "Anonymous",
+      "idNews": "7a291f6c-d40d-405c-9fb4-78be22253a3e",
+      "content": "n2o1",
+      "id": "77b697ec-ebe6-4080-b9f5-459fc264eff8"
+    }
+  ]
+}
